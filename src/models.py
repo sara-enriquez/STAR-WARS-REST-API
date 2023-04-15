@@ -57,7 +57,7 @@ class Planet(db.Model):
             "climate": self.climate,
         }
 
-class Favorite(db.Model):
+class Favorites(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id')) 
     people_id = db.Column(db.Integer, db.ForeignKey('people.id')) 
